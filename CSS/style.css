@@ -10,96 +10,66 @@
   }
   
   body{
-     background-color: #f3f5f9;
+     background-color: whitesmoke;
   }
   
-  .wrapper{
+  .box{
     display: flex;
     position: relative;
   }
   
-  .wrapper .vertnav{
-    width: 200px;
+  .box .vnav{
+    width: 250px;
     height: 100%;
     background: rgb(200, 16, 46);
-    padding: 30px 0px;
+    padding: 50px 0px;
     position: fixed;
   }
   
-  .wrapper .vertnav h2{
-    color: #fff;
-    text-transform: uppercase;
+  .box .vnav h2{
+    color: white;
+    text-transform:capitalize;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
   }
   
-  .wrapper .vertnav ul li{
+  .box .vnav ul li{
     padding: 25px;
-    border-bottom: 1px solid #bdb8d7;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgb(150, 12, 34);
+    border-top: 1px solid rgb(150, 12, 34);
     text-align: center;
   }    
   
-  .wrapper .vertnav ul li a{
+  .box .vnav ul li a{
     color: whitesmoke;
     display: block;
   }
   
-  .wrapper .vertnav ul li a .fas{
-    width: 25px;
-  }
-  
-  .wrapper .vertnav ul li:hover{
+  .box .vnav ul li:hover{
     background-color: rgb(150, 12, 34);
   }
-      
-  .wrapper .vertnav ul li:hover a{
-    color: #fff;
-  }
-   
-  .wrapper .vertnav .{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
+
   
-  .wrapper .vertnav . a{
-    display: block;
-    width: 40px;
-    background: #594f8d;
-    height: 40px;
-    line-height: 45px;
-    text-align: center;
-    margin: 0 5px;
-    color: #bdb8d7;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-  
-  .wrapper .main_body{
+  .box .main_body{
     width: 100%;
-    margin-left: 200px;
+    margin-left: 250px;
   }
   
-  .wrapper .main_body .header{
-    padding: 20px;
+  .box .main_body .header{
+    padding: 10px;
     background: rgb(150, 12, 34);
     color: white;
-    border-bottom: 1px solid #e0e4e8;
     text-align: center;
   }
   
-  .wrapper .main_body .biography{
+  .box .main_body .biography{
     margin: 20px;
     color: black;
-    line-height: 25px;
+    line-height: 35px;
     
   }
   
-  .wrapper .main_body .biography div{
+  .box .main_body .biography div{
     margin-bottom: 20px;
   }
 
@@ -112,7 +82,33 @@
 
   }
 
-  h2 {
+  h2{
+    text-align: center;
+  }
+
+  .centertext{
+    position: absolute;
+    top: 350px; 
+    left: auto; 
+    right: 7%;
+    transform: translate(-50%, -50%); 
+    color: rgb(200, 16, 46); 
+    padding: 10px 20px; 
+    font-size: 50px; 
+    text-align: center;
+    width: auto;
+    
+  }
+
+  .centertext2 {
+
+    position: absolute;
+    top: -525px; 
+    left: 455px; 
+    transform: translate(-50%, -50%); 
+    color: rgb(200, 16, 46); 
+    padding: 10px 20px; 
+    font-size: 20px; 
     text-align: center;
   }
 
@@ -125,31 +121,12 @@
     margin-right: auto;
     max-height:max-content;
     border-collapse: collapse;
+
+  }
+
+  body.home {
+    background-image: url("../Image/restinterior2.jpg");
   }
 
 
 
-  .centertext{
-    position:relative;
-    top: -500px; 
-    left: 620px; 
-    transform: translate(-50%, -50%); 
-    color: rgb(200, 16, 46); 
-    padding: 10px 20px; 
-    font-size: 50px; 
-    text-align: center;
-    width: auto;
-    
-  }
-
-  .centertext2 {
-
-    position: relative;
-    top: -525px; 
-    left: 455px; 
-    transform: translate(-50%, -50%); 
-    color: rgb(200, 16, 46); 
-    padding: 10px 20px; 
-    font-size: 20px; 
-    text-align: center;
-  }
